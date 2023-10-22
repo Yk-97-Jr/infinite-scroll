@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Montserrat:wght@100&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+
+    font-family: 'Comfortaa', sans-serif;
+    background: #3ec9e265;
+    color: #2a1538;
+}
+h1 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    border-bottom: 2px  2px solid #3e1834;
+   border-radius: 600%;
+   box-shadow: 8px 8px 9px #0e2e3465;
+   
+} 
+
+
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #d44f9d4a;
+    
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fixed-heading {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: -1;
+  }
+
+/* image container */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin-top: 40px
+    
+}
+
+.image-container img {
+     width: 450px;
+     height: 450px;
+     margin: 10px;
+     border-image: round;
+     border-radius: 20px;
+     transition: all 1.2s;
+     z-index: -1000;
+}
+.image-container img:hover {
+    transform: scale(1.3);
+    z-index: 1000;
+}
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 20px;
+    }
+
+    .image-container {
+        margin: 10px;
+    }
+}
